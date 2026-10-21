@@ -1,0 +1,23 @@
+# SimpleVerse Konfiguration
+# Welten, Spawns, Portale und die Lobby stehen in worlds.yml / portals.yml und werden per /mv gesetzt.
+
+# Beim Betreten des Servers immer in der Lobby spawnen
+join-lobby: true
+
+# Chat nur innerhalb der gleichen Welt sichtbar
+separate-chat: true
+
+# Befehle von RTP-Plugins (z.B. BetterRTP), die in abgeschalteten Nether/End-Welten blockiert werden
+rtp-commands: [rtp, wild, betterrtp]
+
+# Standard fuer neu registrierte Welten: "last" (letzte Position) oder "spawn" (immer Spawn)
+default-mode: last
+
+# Standard-Gamemode, wenn eine Welt keinen eigenen hat
+default-gamemode: SURVIVAL
+
+# Welten, die sich Inventar/Op/Gamemode teilen sollen (Standard: jede Welt getrennt).
+# Beispiel: Nether und End teilen sich den Zustand mit "world":
+state-groups: {}
+#  world_nether: world
+#  world_the_end: world

@@ -1,0 +1,39 @@
+name: SimpleVerse
+version: 1.0.0
+main: de.simpleverse.SimpleVerse
+api-version: "1.21"
+load: POSTWORLD
+description: Einfaches Multiverse mit getrennten Inventaren, Ops, Gamemodes und Portalen pro Welt
+commands:
+  mv:
+    description: Weltenverwaltung
+    aliases: [sv, simpleverse]
+    permission: simpleverse.admin
+  mvtp:
+    description: In eine Welt teleportieren
+    aliases: [move, wtp]
+    permission: simpleverse.tp
+  svtp:
+    description: Zum Spawn einer offenen Welt
+    permission: simpleverse.svtp
+  tp:
+    description: Teleportieren (auch in Welten)
+    aliases: [teleport]
+    permission: simpleverse.tp
+  lobby:
+    description: Zur Lobby
+    permission: simpleverse.lobby
+  setlobby:
+    description: Lobby setzen
+    permission: simpleverse.admin
+permissions:
+  simpleverse.admin:
+    default: op
+  simpleverse.tp:
+    default: op
+  simpleverse.tp.others:
+    default: op
+  simpleverse.lobby:
+    default: true
+  simpleverse.svtp:
+    default: true
